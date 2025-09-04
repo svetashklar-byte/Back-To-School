@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World - Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hello World!</h1>
+            <p class="subtitle">Welcome to our amazing web application</p>
+        </header>
+        
+        <main>
+            <div class="card">
+                <h2>Interactive Greeting</h2>
+                <div class="input-group">
+                    <input type="text" id="nameInput" placeholder="Enter your name" maxlength="50">
+                    <button id="greetBtn">Say Hello</button>
+                </div>
+                <div id="greeting" class="greeting"></div>
+            </div>
+            
+            <div class="card">
+                <h2>Current Time</h2>
+                <div id="timeDisplay" class="time-display"></div>
+                <button id="updateTimeBtn">Update Time</button>
+            </div>
+            
+            <div class="card">
+                <h2>Fun Facts</h2>
+                <div id="funFact" class="fun-fact">
+                    <p>Click the button below to learn something interesting!</p>
+                </div>
+                <button id="factBtn">Get Fun Fact</button>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Built with ❤️ for GitHub Pages</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

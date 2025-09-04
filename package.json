@@ -1,14 +1,16 @@
 {
-  "name": "back-to-school",
+  "name": "hello-world-web-app",
   "version": "1.0.0",
-  "description": "A simple Hello World application",
-  "main": "index.js",
+  "description": "A beautiful Hello World web application for GitHub Pages",
+  "main": "index.html",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test:watch": "echo \"Error: no test specified\" && exit 1"
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'No build step required for static site'",
+    "deploy": "echo 'Deploy to GitHub Pages using GitHub Actions'"
   },
-  "keywords": ["hello-world", "nodejs"],
+  "keywords": ["hello-world", "web-app", "github-pages", "html", "css", "javascript"],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://yourusername.github.io/Back-To-School"
 }
