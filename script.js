@@ -47,11 +47,13 @@ function handleGreeting() {
     
     if (name) {
         const greetings = [
-            `Hello, ${name}! Nice to meet you! 👋`,
-            `Hey there, ${name}! Welcome to our app! 🎉`,
-            `Greetings, ${name}! Hope you're having a great day! ✨`,
-            `Hi ${name}! Thanks for visiting our Hello World app! 🌟`,
-            `Welcome, ${name}! You're awesome! 🚀`
+            `🦄 Hello, ${name}! Nice to meet you in our magical world! ✨`,
+            `🌈 Hey there, ${name}! Welcome to our enchanted unicorn paradise! 🦄`,
+            `✨ Greetings, ${name}! Hope you're having a magical day! 🦄`,
+            `🦄 Hi ${name}! Thanks for visiting our Magical Unicorn World! 🌟`,
+            `✨ Welcome, ${name}! You're absolutely magical! 🦄🌈`,
+            `🦄 Hello beautiful ${name}! Ready for some unicorn magic? ✨`,
+            `🌈 Hey magical ${name}! Let's spread some unicorn joy! 🦄✨`
         ];
         
         const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
@@ -64,10 +66,10 @@ function handleGreeting() {
         // Add some confetti effect (simple)
         createConfetti();
     } else {
-        greetingDiv.textContent = 'Please enter your name first! 😊';
+        greetingDiv.textContent = '🦄 Please enter your magical name first! ✨';
         greetingDiv.style.color = '#e53e3e';
         setTimeout(() => {
-            greetingDiv.style.color = '#4a5568';
+            greetingDiv.style.color = '#d63384';
         }, 2000);
     }
 }
@@ -104,21 +106,23 @@ function showFunFact() {
     const factBtn = document.getElementById('factBtn');
     
     const funFacts = [
-        "The first 'Hello, World!' program was written in 1972 by Brian Kernighan at Bell Labs! 📚",
-        "The term 'bug' in programming comes from a real bug found in a computer in 1947! 🐛",
-        "The first computer virus was created in 1983 and was called 'Elk Cloner'! 🦌",
-        "The first website ever created is still online at info.cern.ch! 🌐",
-        "JavaScript was created in just 10 days by Brendan Eich in 1995! ⚡",
-        "The first computer mouse was made of wood! 🖱️",
-        "The word 'computer' originally referred to a person who performed calculations! 👨‍💼",
-        "The first email was sent in 1971 by Ray Tomlinson to himself! 📧",
-        "The first domain name ever registered was symbolics.com in 1985! 🏷️",
-        "The first webcam was created to monitor a coffee pot at Cambridge University! ☕"
+        "🦄 Unicorns are said to have healing powers and can purify water with their horns! ✨",
+        "🌈 The first 'Hello, World!' program was written in 1972 by Brian Kernighan at Bell Labs! 📚",
+        "🦄 Unicorns are mentioned in ancient Greek natural history texts! 📜",
+        "✨ The term 'bug' in programming comes from a real bug found in a computer in 1947! 🐛",
+        "🦄 Unicorns are the national animal of Scotland! 🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+        "🌈 JavaScript was created in just 10 days by Brendan Eich in 1995! ⚡",
+        "🦄 Unicorns are often associated with rainbows and magical sparkles! ✨",
+        "✨ The first computer mouse was made of wood! 🖱️",
+        "🦄 Unicorns are believed to be the most difficult mythical creature to catch! 🎯",
+        "🌈 The first email was sent in 1971 by Ray Tomlinson to himself! 📧",
+        "🦄 Unicorns are said to live in enchanted forests! 🌲✨",
+        "🌈 The first webcam was created to monitor a coffee pot at Cambridge University! ☕"
     ];
     
     // Disable button temporarily
     factBtn.disabled = true;
-    factBtn.textContent = 'Loading...';
+    factBtn.textContent = '🦄 Loading Magic...';
     
     // Simulate loading time for better UX
     setTimeout(() => {
@@ -128,13 +132,13 @@ function showFunFact() {
         
         // Re-enable button
         factBtn.disabled = false;
-        factBtn.textContent = 'Get Fun Fact';
+        factBtn.textContent = '🦄 Get Magical Fact';
     }, 800);
 }
 
 function createConfetti() {
-    // Simple confetti effect
-    const colors = ['#667eea', '#764ba2', '#f093fb', '#f5576c', '#4facfe', '#00f2fe'];
+    // Magical unicorn confetti effect
+    const colors = ['#ff6b9d', '#ffc3e0', '#ff9ec7', '#fecfef', '#ff9a9e', '#ffb3d1'];
     const confettiCount = 50;
     
     for (let i = 0; i < confettiCount; i++) {
@@ -179,7 +183,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Add some console fun
-console.log('%cHello World Web App! 🚀', 'color: #667eea; font-size: 20px; font-weight: bold;');
-console.log('%cBuilt with HTML, CSS, and JavaScript', 'color: #764ba2; font-size: 14px;');
-console.log('%cReady for GitHub Pages deployment! 🌐', 'color: #48bb78; font-size: 14px;');
+// Add some magical console fun
+console.log('%c🦄 Magical Unicorn World! ✨', 'color: #ff6b9d; font-size: 20px; font-weight: bold;');
+console.log('%c🌈 Built with HTML, CSS, and JavaScript magic! 🦄', 'color: #ffc3e0; font-size: 14px;');
+console.log('%c✨ Ready for magical GitHub Pages deployment! 🌈', 'color: #ff9ec7; font-size: 14px;');
