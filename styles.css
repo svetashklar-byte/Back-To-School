@@ -245,7 +245,6 @@ footer {
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(255, 107, 157, 0.3);
-    animation: magicalSparkle 2s ease-in-out infinite;
 }
 
 /* Responsive design */
